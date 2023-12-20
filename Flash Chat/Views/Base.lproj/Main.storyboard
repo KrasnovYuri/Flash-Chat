@@ -12,8 +12,8 @@
         <!--Welcome View Controller-->
         <scene sceneID="jtB-Zd-nto">
             <objects>
-                <viewController id="sCa-1x-46U" customClass="WelcomeViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fJT-6J-Zy9">
+                <viewController id="sCa-1x-46U" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJT-6J-Zy9" customClass="CLTypingLabel" customModule="CLTypingLabel">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -36,7 +36,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pDN-Ax-wfV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -83,7 +83,7 @@
         <!--Register View Controller-->
         <scene sceneID="1t7-dW-xhX">
             <objects>
-                <viewController id="Jwi-I2-uTu" customClass="RegisterViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jwi-I2-uTu" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y37-ZB-vdN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
         <!--Login View Controller-->
         <scene sceneID="EeN-FB-o8G">
             <objects>
-                <viewController id="8Hm-Hz-gff" customClass="LoginViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Hm-Hz-gff" customClass="LoginViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dk8-fL-n2E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +273,7 @@
         <!--Chat View Controller-->
         <scene sceneID="ASO-0b-L5p">
             <objects>
-                <viewController id="OtI-lv-yRY" customClass="ChatViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OtI-lv-yRY" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3pw-lf-Vnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
