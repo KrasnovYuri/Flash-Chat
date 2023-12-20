@@ -31,15 +31,6 @@
                                     <segue destination="8Hm-Hz-gff" kind="show" id="SAj-So-Ldi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-D4-yWf">
-                                <rect key="frame" x="52" y="418" width="310" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="pDN-Ax-wfV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
-                                <color key="textColor" name="BrandBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-bT-DZr">
                                 <rect key="frame" x="0.0" y="745" width="414" height="48"/>
                                 <color key="backgroundColor" name="BrandLightBlue"/>
@@ -55,12 +46,20 @@
                                     <segue destination="Jwi-I2-uTu" kind="show" id="QVt-O0-mAQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-D4-yWf">
+                                <rect key="frame" x="207" y="418" width="0.0" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pDN-Ax-wfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ugS-ec-3RV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="k9l-D4-yWf" firstAttribute="centerX" secondItem="fJT-6J-Zy9" secondAttribute="centerX" id="2Y3-A2-GG9"/>
-                            <constraint firstItem="k9l-D4-yWf" firstAttribute="leading" secondItem="ugS-ec-3RV" secondAttribute="leading" constant="52" id="8KH-OB-sXs"/>
                             <constraint firstItem="k9l-D4-yWf" firstAttribute="centerY" secondItem="fJT-6J-Zy9" secondAttribute="centerY" id="C6s-ua-j2T"/>
                             <constraint firstItem="g1i-Rh-7eR" firstAttribute="top" secondItem="Nhc-bT-DZr" secondAttribute="bottom" constant="8" id="Dn4-li-M48"/>
                             <constraint firstItem="g1i-Rh-7eR" firstAttribute="bottom" secondItem="ugS-ec-3RV" secondAttribute="bottom" id="HdJ-Xt-60m"/>
@@ -342,7 +341,13 @@
                             <constraint firstItem="aJG-er-JSO" firstAttribute="trailing" secondItem="vRv-D1-tmf" secondAttribute="trailing" id="r2z-t5-LcK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GdN-iv-IkL"/>
+                    <navigationItem key="navigationItem" id="GdN-iv-IkL">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="G6O-kl-E68">
+                            <connections>
+                                <action selector="logOutPressed:" destination="OtI-lv-yRY" id="ajo-gq-5Zh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="TQ4-xJ-nWV" id="cxC-F1-9Ey"/>
                         <outlet property="tableView" destination="1lP-nu-Utb" id="Uek-Fi-YsX"/>
@@ -393,7 +398,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
