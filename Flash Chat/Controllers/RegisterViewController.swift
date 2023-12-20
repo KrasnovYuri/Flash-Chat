@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
             if let error {
                 print(error.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                self.performSegue(withIdentifier: K.registerSegue, sender: self)
             }
         }
     }

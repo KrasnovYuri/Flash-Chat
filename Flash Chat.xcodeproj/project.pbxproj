@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		921189842B32D51600E36E8D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 921189832B32D51600E36E8D /* FirebaseAuth */; };
 		921189862B32D51600E36E8D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 921189852B32D51600E36E8D /* FirebaseFirestore */; };
+		921189882B333FEA00E36E8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921189872B333FEA00E36E8D /* Constants.swift */; };
 		9274347E2B32C63300B9EC30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9274347D2B32C63300B9EC30 /* GoogleService-Info.plist */; };
 		92E8E9392B30947700955C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8E9382B30947700955C32 /* AppDelegate.swift */; };
 		92E8E93B2B30947700955C32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8E93A2B30947700955C32 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		921189872B333FEA00E36E8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9274347D2B32C63300B9EC30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92E8E9352B30947700955C32 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E8E9382B30947700955C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				92E8E9432B30947900955C32 /* LaunchScreen.storyboard */,
 				92E8E9462B30947900955C32 /* Info.plist */,
 				9274347D2B32C63300B9EC30 /* GoogleService-Info.plist */,
+				921189872B333FEA00E36E8D /* Constants.swift */,
 			);
 			path = "Flash Chat";
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				92E8E9392B30947700955C32 /* AppDelegate.swift in Sources */,
 				92E8E93B2B30947700955C32 /* SceneDelegate.swift in Sources */,
 				92E8E9522B309DE000955C32 /* LoginViewController.swift in Sources */,
+				921189882B333FEA00E36E8D /* Constants.swift in Sources */,
 				92E8E9542B30A1CB00955C32 /* ChatViewController.swift in Sources */,
 				92E8E9502B309C9A00955C32 /* RegisterViewController.swift in Sources */,
 			);
