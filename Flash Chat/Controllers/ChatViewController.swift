@@ -16,9 +16,9 @@ class ChatViewController: UIViewController {
     let db = Firestore.firestore()
     
     var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey!"),
-        Message(sender: "a@b.com", body: "Hello!"),
-        Message(sender: "1@2.com", body: "What's up?gfgdhdghjbdlbndl;kf;okhj df ljf;lrkgjdf;lbv;kl jdf; jdf df;lgj  dflgjkdf;lkgjdflbv    dflkgjdlk jdflkgjdflgjdfkljb;dkjg[iordghj;dfkljbdl;igjdfkl;jbndkl;jgbodfijbdfkln")
+//        Message(sender: "1@2.com", body: "Hey!"),
+//        Message(sender: "a@b.com", body: "Hello!"),
+//        Message(sender: "1@2.com", body: "What's up?")
     ]
     
     override func viewDidLoad() {
@@ -28,6 +28,31 @@ class ChatViewController: UIViewController {
         title = K.appName
         navigationItem.hidesBackButton = true
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessage()
+    }
+    
+    func loadMessage() {
+        messages = []
+        
+        db.collection(K.FStore.collectionName).getDocuments { querySnapshot, error in
+            if let error {
+                print(error)
+            } else {
+                guard let snapshotDocuments = querySnapshot?.documents else { return }
+                for doc in snapshotDocuments {
+                    let data = doc.data()
+                    guard let sender = data[K.FStore.senderField] as? String else { return }
+                    guard let messageBody = data[K.FStore.bodyField] as? String else { return }
+                    let newMessage = Message(sender: sender, body: messageBody)
+                    self.messages.append(newMessage)
+                    
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -37,7 +62,7 @@ class ChatViewController: UIViewController {
             if let error {
                 print(error)
             } else {
-                print("Succes")
+                print("Successfully saved data")
             }
         }
     }
